@@ -4,8 +4,6 @@
 
 * [跳转页面](https://raw.githubusercontent.com/shyperwang/proxy_heroku/main/html/index.html)
   
-* [欢迎使用caddy页面](https://raw.githubusercontent.com/caddyserver/dist/master/welcome/index.html)  
-  
 * [3DCEList元素周期表](https://github.com/wulabing/3DCEList/archive/master.zip)  
 
 * [Spotify-Landing-Page-Redesign](https://github.com/WebDevSimplified/Spotify-Landing-Page-Redesign/archive/master.zip)  
