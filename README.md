@@ -102,5 +102,19 @@ addEventListener(
 )
 ```
 </details>
-  
+
+<details>
+<summary>cloudflare workers example2</summary>
+  addEventListener(
+"fetch",event => {
+let url=new URL(event.request.url);
+url.hostname="xx.xxxx.xx";//你的heroku域名
+let request=new Request(url,event.request);
+event. respondWith(
+fetch(request)
+)
+}
+)
+  ```
+</details>
 > [更多来自热心网友PR的使用教程](/tutorial)
