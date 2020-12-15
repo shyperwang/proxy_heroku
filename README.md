@@ -105,6 +105,8 @@ addEventListener(
 
 <details>
 <summary>cloudflare workers example2</summary>
+  
+  ```js
   addEventListener(
 "fetch",event => {
 let url=new URL(event.request.url);
