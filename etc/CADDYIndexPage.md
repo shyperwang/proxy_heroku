@@ -2,7 +2,9 @@
   
 > 选择你中意的链接地址复制后作为变量CADDYIndexPage变量值，欢迎PR，一些推荐：  
 
-* [跳转页面](https://raw.githubusercontent.com/shyperwang/proxy_heroku/main/html/index.html)
+* [跳转页面](https://raw.githubusercontent.com/shyperwang/proxy_heroku/main/html/index.html)，默认的跳转页面，可以自行修改代码，改为自己的网站
+
+* [欢迎使用caddy页面](https://raw.githubusercontent.com/caddyserver/dist/master/welcome/index.html)  
   
 * [3DCEList元素周期表](https://github.com/wulabing/3DCEList/archive/master.zip)  
 
