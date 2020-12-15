@@ -1,5 +1,10 @@
 > 提醒： 滥用可能导致账户被BAN！！！   
-  [原始脚本](https://github.com/mixool/kuhero)
+
+
+  [原始脚本](https://github.com/mixool/kuhero),在原作者的基础上网站，增加了跳转功能，可修改跳转网页代码，起到跳转到任意网站的目的。
+  
+  目前trojan使用的是ws，我用v2rayNG测试不过，因为v2rayNG是用的SNI，修改下程序文件试试--待解决
+  
 * 使用v2ray+caddy同时部署通过ws传输的vmess vless trojan shadowsocks socks等协议  
 * 支持tor网络，且可通过自定义网络配置文件启动v2ray和caddy来按需配置各种功能  
 * 支持存储自定义文件,目录及账号密码均为AUUID,客户端务必使用TLS连接  
