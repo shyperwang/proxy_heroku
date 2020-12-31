@@ -33,18 +33,4 @@ header Connection *Upgrade*
 header Upgrade    websocket
 path /$AUUID-trojan
 }
-reverse_proxy @websocket_v2ray_trojan unix//etc/caddy/trojan
-
-@websocket_v2ray_ss {
-header Connection *Upgrade*
-header Upgrade    websocket
-path /$AUUID-ss
-}
-reverse_proxy @websocket_v2ray_ss 127.0.0.1:4234
-
-@websocket_v2ray_socks {
-header Connection *Upgrade*
-header Upgrade    websocket
-path /$AUUID-socks
-}
-reverse_proxy @websocket_v2ray_socks 127.0.0.1:5234
+reverse_proxy @websocket_v2ray_trojan 127.0.0.1:4433
