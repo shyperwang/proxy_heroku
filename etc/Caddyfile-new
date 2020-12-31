@@ -1,0 +1,36 @@
+:$PORT
+root * /usr/share/caddy
+file_server browse
+
+header {
+    X-Robots-Tag none
+    X-Content-Type-Options nosniff
+    X-Frame-Options DENY
+    Referrer-Policy no-referrer-when-downgrade
+}
+
+basicauth /$AUUID/* {
+    $AUUID $MYUUID-HASH
+}
+
+@websocket_v2ray_vmess {
+header Connection *Upgrade*
+header Upgrade    websocket
+path /$AUUID-vmess
+}
+reverse_proxy @websocket_v2ray_vmess unix//etc/caddy/vmess
+
+
+@websocket_v2ray_vless {
+header Connection *Upgrade*
+header Upgrade    websocket
+path /$AUUID-vless
+}
+reverse_proxy @websocket_v2ray_vless unix//etc/caddy/vless
+
+@websocket_v2ray_trojan {
+header Connection *Upgrade*
+header Upgrade    websocket
+path /$AUUID-trojan
+}
+reverse_proxy @websocket_v2ray_trojan 127.0.0.1:4433
