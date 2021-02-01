@@ -17,6 +17,6 @@ done
 # start
 tor &
 
-/xray -config /v2ray.json &
+/xray run -c /v2ray.json &
 
 caddy run --config /etc/caddy/Caddyfile --adapter caddyfile
